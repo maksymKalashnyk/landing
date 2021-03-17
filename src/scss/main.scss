@@ -7,7 +7,6 @@ html {
 }
 
 .home {
-  position: relative;
   height: 1050px;
   background-size: cover;
 
@@ -68,6 +67,11 @@ html {
     }
   }
 }
+
+// .new {
+//   width: 100%;
+//   display: ;
+// }
 
 .features {
   margin-top: 370px;
@@ -145,7 +149,6 @@ html {
 }
 
 .drag {
-  position: relative;
   min-height: 750px;
   background-size: cover;
 
@@ -213,6 +216,8 @@ html {
   }
 
   .pricing-content {
+    display: flex;
+
     p {
       margin-top: 100px;
       margin-bottom: 50px;
@@ -225,6 +230,12 @@ html {
     margin-top: 90px;
     padding: 30px;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+
+    &:hover {
+      -ms-transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
 
     .plan-title {
       font-size: 24px;
