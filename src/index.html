@@ -10,12 +10,28 @@
     <section class="home" style="background-image: url('img/Graph.jpg')">
       <header>
         <div class="container-fluid">
-          <div class="row">
+          <div class="row test">
             <div class="col-2 offset-1">
               <img src="img/Logo.png" alt="logo" class="logo" />
             </div>
-            <div class="col-8">
-              <ul>
+
+            <div class="col-8 navigation">
+              <div class="wrapper">
+                <input type="checkbox" id="check-menu" />
+                <label for="check-menu"></label>
+                <div class="burger-line first"></div>
+                <div class="burger-line second"></div>
+                <div class="burger-line third"></div>
+                <nav class="main-menu center">
+                  <a href="">Blog</a>
+                  <a href="#pricing">Pricing</a>
+                  <a href="#features">Features</a>
+                  <a href="">Contact</a>
+                  <a href="">Login</a>
+                </nav>
+              </div>
+
+              <ul id="navigation">
                 <li><a href="#features">Features</a></li>
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#">Blog</a></li>
@@ -39,7 +55,7 @@
 
     <section class="features" id="features">
       <div class="container-fluid">
-        <div class="row">
+        <div class="row test">
           <div class="col-4">
             <div class="features-content center">
               <img src="img/features_1.png" alt="features_1" />
@@ -108,7 +124,7 @@
 
     <section class="drag" style="background-image: url('img/Graph.jpg')">
       <div class="container-fluid">
-        <div class="row">
+        <div class="test">
           <div class="col-6">
             <img src="img/Workflow.png" class="workflow" alt="workflow" />
           </div>
@@ -117,17 +133,44 @@
             <div class="drag-content">
               <div class="drag-title">Drag & Drop</div>
               <div class="slider">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  <br /><br />
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
+                <div class="item">
+                  <p>
+                    1Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                    <br /><br />
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
+                <div class="item">
+                  <p>
+                    2Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                    <br /><br />
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
+                <div class="item">
+                  <p>
+                    3Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                    <br /><br />
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
                 <div class="row">
                   <div class="slider-button">
-                    <a href=""><img src="img/Arrow_left.png" alt="" /></a>
-                    <a href=""><img src="img/Arrow_right.png" alt="" /></a>
+                    <a class="next" onclick="prevSlide()">
+                      <img src="img/Arrow_left.png" alt="" />
+                    </a>
+                    <a class="prev" onclick="nextSlide()">
+                      <img src="img/Arrow_right.png" alt="" />
+                    </a>
                   </div>
                 </div>
               </div>
@@ -160,8 +203,8 @@
     <section class="pricing" id="pricing">
       <div class="container">
         <div class="pricing-title center">Check our pricing!</div>
-        <div class="new">
-          <div class="pricing-content">
+        <div class="pricing-content">
+          <div class="new">
             <div class="col-4 center">
               <div class="plan-content">
                 <div class="plan-title">BRONZE PLAN</div>
@@ -172,16 +215,20 @@
                 </div>
                 <ul class="plan-body">
                   <li>
-                    <img src="img/ok.png" alt="" />Lorem ipsum dolor sit am
+                    <img src="img/ok.png" class="img-price" alt="" />Lorem ipsum
+                    dolor sit am
                   </li>
                   <li>
-                    <img src="img/ok.png" alt="" />Lorem ipsum dolor sit am
+                    <img src="img/ok.png" class="img-price" alt="" />Lorem ipsum
+                    dolor sit am
                   </li>
                   <li>
-                    <img src="img/not-ok.png" alt="" />Lorem ipsum dolor sit am
+                    <img src="img/not-ok.png" class="img-price" alt="" />Lorem
+                    ipsum dolor sit am
                   </li>
                   <li>
-                    <img src="img/not-ok.png" alt="" />Lorem ipsum dolor sit am
+                    <img src="img/not-ok.png" class="img-price" alt="" />Lorem
+                    ipsum dolor sit am
                   </li>
                 </ul>
               </div>
@@ -197,16 +244,20 @@
                 </div>
                 <ul class="plan-body">
                   <li>
-                    <img src="img/ok.png" alt="" />Lorem ipsum dolor sit am
+                    <img src="img/ok.png" class="img-price" alt="" />Lorem ipsum
+                    dolor sit am
                   </li>
                   <li>
-                    <img src="img/ok.png" alt="" />Lorem ipsum dolor sit am
+                    <img src="img/ok.png" class="img-price" alt="" />Lorem ipsum
+                    dolor sit am
                   </li>
                   <li>
-                    <img src="img/ok.png" alt="" />Lorem ipsum dolor sit am
+                    <img src="img/ok.png" class="img-price" alt="" />Lorem ipsum
+                    dolor sit am
                   </li>
                   <li>
-                    <img src="img/not-ok.png" alt="" />Lorem ipsum dolor sit am
+                    <img src="img/not-ok.png" class="img-price" alt="" />Lorem
+                    ipsum dolor sit am
                   </li>
                 </ul>
               </div>
@@ -222,35 +273,39 @@
                 </div>
                 <ul class="plan-body">
                   <li>
-                    <img src="img/ok.png" alt="" />Lorem ipsum dolor sit am
+                    <img src="img/ok.png" class="img-price" alt="" />Lorem ipsum
+                    dolor sit am
                   </li>
                   <li>
-                    <img src="img/ok.png" alt="" />Lorem ipsum dolor sit am
+                    <img src="img/ok.png" class="img-price" alt="" />Lorem ipsum
+                    dolor sit am
                   </li>
                   <li>
-                    <img src="img/ok.png" alt="" />Lorem ipsum dolor sit am
+                    <img src="img/ok.png" class="img-price" alt="" />Lorem ipsum
+                    dolor sit am
                   </li>
                   <li>
-                    <img src="img/ok.png" alt="" />Lorem ipsum dolor sit am
+                    <img src="img/ok.png" class="img-price" alt="" />Lorem ipsum
+                    dolor sit am
                   </li>
                 </ul>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="col-10 offset-1 center">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-            </p>
-          </div>
+        <div class="col-10 offset-1 center">
+          <p class="oops">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris.
+          </p>
+        </div>
 
-          <div class="center">
-            <div class="row">
-              <div class="pricing-box">
-                <a href="" class="btn btn-start">Join now!</a>
-              </div>
+        <div class="center">
+          <div class="row">
+            <div class="pricing-box">
+              <a href="" class="btn btn-start">Join now!</a>
             </div>
           </div>
         </div>
@@ -265,11 +320,11 @@
               <p>© 2016 Merkury All Right Reserved</p>
             </div>
 
-            <div class="col-5 right">
+            <div class="col-5 right social">
               <ul>
                 <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
                 <li class="footer-img">
                   <a href="#"><img src="img/facebook.png" /></a>
                 </li>
